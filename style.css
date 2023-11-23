@@ -34,7 +34,6 @@
 
 body {
     font-family: 'Noto Sans JP', Times, serif;
-    padding-top: 50px; /* ヘッダーの後ろに要素が隠れないようにするため */
 }
 
 header {
