@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.custom-text {
+  font-family: 'Noto Sans JP', serif;
+}
+
+.scroll-box {
+  width: 70%; /* ボックスの幅を指定 */
+  height: 150px; /* ボックスの高さを指定 */
+  overflow: auto; /* スクロールを有効にする */
+  border: 1px solid #ccc; /* ボーダーを追加 */
+  padding: 10px; /* 内部の余白を指定 */
+}
+
+.centered-element {
+  display: flex;
+  justify-content: flex-start;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recommend {
+    width: 100%; /* 幅いっぱいを指定 */
+    height: 300px; /* 高さを300pxに指定 */
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px; /* ヘッダーに上下左右それぞれ余白を指定 */
+    display: flex; /* 中の要素を横並びにする */
+    align-items: center; /* 中の要素を上下中央に並べる */
+}
+
+
+body {
+    font-family: 'Noto Sans JP', Times, serif;
+    padding-top: 50px; /* ヘッダーの後ろに要素が隠れないようにするため */
+}
+
+header {
+    width: 100%; /* 幅いっぱいを指定 */
+    height: 50px; /* 高さを50pxに指定 */
+    justify-content: space-between;
+    background: #d8edff; /* 背景色にグレーを指定 */
+    padding: 10px 50px 10px 5px; /* ヘッダーに上下左右それぞれ余白を指定 */
+    box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    left: 0; /* 左右の固定位置を左から0pxにする */
+    display: flex; /* 中の要素を横並びにする */
+    align-items: center; /* 中の要素を上下中央に並べる */
+}
+
+header img {
+    max-height: 40px;
+    max-width: 40px;
+    padding: 0px 15px 0px 15px;
+}
+
+header h1 {
+    display: inline;
+}
+
+header .gnav .menu {
+    display: flex; /* 中の要素を横並びにする */
+}
+
+header .gnav .menu li {
+    list-style: none; /* リストの[・]を消す */
+    font-family: 'Noto Sans JP', Times, serif;
+}
+
+header .gnav .menu li + li {
+    margin-left: 40px; /* メニューそれぞれに間隔をあけるため */
+
+
+}
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.notlink {
+    color: black;
+    text-decoration: none;
+}
+
+header img, header h1 {
+    margin: 0;
+}
+
+
+main {
+    height: 100vh; /* スクロールの演出を見れるようにmainに高さを指定 */
+
+}
+
+OBJECT {
+  width: 70%; /* ボックスの幅を指定 */
+  height: 150px; /* ボックスの高さを指定 */
+  overflow: auto; /* スクロールを有効にする */
+  border: 1px solid #ccc; /* ボーダーを追加 */
+  padding: 10px; /* 内部の余白を指定 */
+}
+
+.google_forms {
+  text-align: center;
+}
+
+
+/* https://www.sejuku.net/blog/224915 */
+.textbox {
+  width: 200px;
+  margin: 0px 0px 0px 5px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  padding: 0.4em;
+}
+
+.textbox:focus {
+  outline: 0;
+  border: 2px solid #80C4FF;
+}
+
+/* https://kyoheiomi.com/design/css_button_design */
+.fuwatto_btn_yellow{ display: inline-block; background-color: #80C4FF; color: #000; width: 60px; padding: 0.4em; text-decoration: none; border-radius: 4px; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2); -webkit-tap-highlight-color: transparent; transition: .3s ease-out; margin: 0px 5px;
+}
+.fuwatto_btn_yellow:hover{ cursor: pointer; text-decoration: none; box-shadow: 0 5px 10px 0 rgba(0,0,0,0.12), 0 3px 20px 0 rgba(0,0,0,0.12), 0 5px 6px -2px rgba(0,0,0,0.2);
+}
