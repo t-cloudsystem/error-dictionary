@@ -34,22 +34,16 @@ fetch(jsonFilePath)
             const embed_condition = document.createElement('p');
             const embed_cause = document.createElement('p');
             const embed_actions = document.createElement('p');
-            const embed_report = document.createElement('h2');
-            const embed_forms = document.createElement('p');
 
             embed_status.textContent = `E${user.id}（${user.status}）`;
             embed_condition.textContent = `出現条件: ${convertNewlineToBr(user.condition)}`;
             embed_cause.innerHTML = `原因<br>${convertNewlineToBr(user.cause)}`;
             embed_actions.innerHTML = `対処法<br>${convertNewlineToBr(user.actions)}`;
-            embed_report.innerHTML = `報告はこちらから（エラーコードは自動入力されています）`;
-            embed_forms.innerHTML = `<div class="google_forms"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSen8eHVbmULhOZRtAT-oan8fSIJeiXLsefr1vpiTPtOsR3stw/viewform?embedded=true&entry.271553422=%E3%83%90%E3%82%B0%E5%A0%B1%E5%91%8A&entry.192082735=%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E3%81%9F&entry.1703294069=E${user.id}" width="640" height="714" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe></div>`;
 
             userDiv.appendChild(embed_status);
             userDiv.appendChild(embed_condition);
             userDiv.appendChild(embed_cause);
             userDiv.appendChild(embed_actions);
-            userDiv.appendChild(embed_report);
-            userDiv.appendChild(embed_forms);
 
             userDataDiv.appendChild(userDiv);
         } else {
