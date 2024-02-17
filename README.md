@@ -6,7 +6,9 @@
 3. 情報が表示されます。
 
 ## 技術情報
-- [data.json](https://github.com/takechi-scratch/cs_error-dictionary/blob/main/error/data.json)にすべてのエラー内容が載っています。
+- [data.json](https://github.com/takechi-scratch/cs_error-dictionary/blob/main/error/data.json)にすべてのエラー内容が記述されています。
+  - JSONファイルになっています。
+  - 作成時には、最新情報維持のため、[このファイル](https://takechi-scratch.github.io/cs_error-dictionary/error/data.json)を直接読み込むことをおすすめします。
 - 改善の提案はtakechi-scratchまで。
 
 ## 製作者
