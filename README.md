@@ -1,3 +1,5 @@
+# Github版エラー辞典
+
 ## 使い方
 1. [エラー辞典](https://takechi-scratch.github.io/cs_error-dictionary/)にアクセスする。
 2. Eを除いた4桁のエラーコードを入力して、「参照」をクリック。
