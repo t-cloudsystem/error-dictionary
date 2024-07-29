@@ -1,45 +1,47 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="expires" content="0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="expires" content="0">
 
-<meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Script-Type" content="text/javascript" />
-<meta name="author" content="takechi">
-<meta name="robots" content="INDEX,FOLLOW" />
-<title>クラウドシステムエラー辞典</title>
-<link rel="icon" href="/takechi_icon.jpg">
-<link rel="stylesheet" href="/cs_error-dictionary/style.css">
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta name="author" content="takechi">
+  <meta name="robots" content="INDEX,FOLLOW" />
+  <title>クラウドシステムエラー辞典</title>
+  <link rel="icon" href="takechi_icon.jpg">
+  <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
 </head>
 
 
 <body>
 
-<input type="text" id="urlInput" placeholder="エラーコード" onkeypress="handleKeyPress(event)" class="textbox">
-<button onclick="redirectToURL()" class="fuwatto_btn_yellow"><b>参照</b></button>
+  <input type="text" id="urlInput" placeholder="エラーコード" onkeypress="handleKeyPress(event)" class="textbox">
+  <button onclick="redirectToURL()" class="fuwatto_btn_yellow"><b>参照</b></button>
 
-<script>
-function redirectToURL() {
-  const urlInput = document.getElementById('urlInput').value;
-  if (urlInput) {
-    const modifiedURL = './error/?id=' + urlInput;
-    window.location.href = modifiedURL;
-  }
-}
+  <script>
+    function redirectToURL() {
+      const urlInput = document.getElementById('urlInput').value;
+      if (urlInput) {
+        const modifiedURL = './error/?id=' + urlInput;
+        window.location.href = modifiedURL;
+      }
+    }
 
-function handleKeyPress(event) {
-  if (event.keyCode === 13) {
-    redirectToURL();
-  }
-}
+    function handleKeyPress(event) {
+      if (event.keyCode === 13) {
+        redirectToURL();
+      }
+    }
 
-</script>
+  </script>
 
 </body>
+
 </html>
